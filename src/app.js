@@ -7,7 +7,7 @@ const app = express();
  * Tu dois afficher MESSAGE_BIENVENUE et DEBUG ici.
  */
 app.get('/', (req, res) => {
-  const message = process.env.MESSAGE_BIENVENUE || "Bienvenue sur mon app Express !";
+  const message = process.env.MESSAGE_BIENVENUE || "Bienvenue !";
   const debug = process.env.DEBUG || "false";
 
   res.send(`
